@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGrand Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/story.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">CyberGrand</div>
+        <div class="header-links">
+            <a href="#" class="login-link" style="color: #ffff; text-decoration: none;">Incidents</a>
+            
+            <a href="#" class="sign-in-link" style="color: #ffff; text-decoration: none;">Assets</a>
+            <a href="/main" class="sign-in-link" style="color: #ffff; text-decoration: none; ">Vulnerabilities</a>
+            <a href="/story" class="sign-in-link" style="color: #ffff; text-decoration: none;border-bottom: 2px solid white;padding-bottom: 5px;">Scan</a>
+            <a href="/testip" class="sign-in-link" style="color: #ffff; text-decoration: none;">Test IP</a>
+            <a href="#" class="sign-in-link" style="color: black; text-decoration: none;"><img src="{{ url_for('static', filename='icons/image1.png') }}" alt=""></a>
+            <a href="#" class="sign-in-link" style="color: black; text-decoration: none;"><img src="{{ url_for('static', filename='icons/image2.png') }}" alt=""></a>
+            <a href="#" class="sign-in-link" style="color: black; text-decoration: none;"><img src="{{ url_for('static', filename='icons/image3.png') }}" alt=""></a>
+            <a href="#" class="sign-in-link" style="color: black; text-decoration: none;"><img src="{{ url_for('static', filename='icons/image.png') }}" alt=""></a>
+            <a href="#" class="sign-in-link" style="color: black;"><img src="{{ url_for('static', filename='image/image4.png') }}" alt=""></a>
+            
+            
+            
+        </div>
+    </header>
+ <div class="Security-text"><h1 style="font-size: 48px;">История уязвимостей</h1><br/>
+
+</div>
+
+
+    <section class="vulnerability-list">
+        <!-- Первая карточка -->
+        <div class="vulnerability-card">
+            <button class="vulnerability-toggle">
+                <span>1. Название уязвимости</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="vulnerability-details">
+                <p>Описание уязвимости. Здесь можно указать её подробности, например, рекомендации по устранению.</p>
+            </div>
+        </div>
+
+        <!-- Вторая карточка -->
+        <div class="vulnerability-card">
+            <button class="vulnerability-toggle">
+                <span>2. Название уязвимости</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="vulnerability-details">
+                <p>Описание уязвимости. Здесь можно указать её подробности, например, рекомендации по устранению.</p>
+            </div>
+        </div>
+
+        <!-- Третья карточка -->
+        <div class="vulnerability-card">
+            <button class="vulnerability-toggle">
+                <span>3. Название уязвимости</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="vulnerability-details">
+                <p>Описание уязвимости. Здесь можно указать её подробности, например, рекомендации по устранению.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <main class="main-content">
+        <div class="sidebar left">
+            <p style="margin-left: -108rem;margin-top: -38rem;">C</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -108rem;">Y</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -108rem;">B</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -108rem;">E</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -108rem;">R</p>
+        </div>
+
+        
+    
+        
+        <script>
+            // Скрипт для переключения раскрытия карточек
+            document.querySelectorAll('.vulnerability-toggle').forEach(button => {
+                button.addEventListener('click', () => {
+                    const card = button.closest('.vulnerability-card');
+                    card.classList.toggle('active');
+                });
+            });
+        </script>
+</body>
+</html>

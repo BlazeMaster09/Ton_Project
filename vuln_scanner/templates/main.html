@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGrand Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">CyberGrand</div>
+        <div class="header-links">
+            <a href="/" class="login-link" style="color: #ffff; text-decoration: none;">Incidents</a>
+            
+            <a href="#" class="sign-in-link" style="color: #ffff; text-decoration: none;">Assets</a>
+            <a href="#" class="sign-in-link" style="color: #ffff; text-decoration: none; border-bottom: 2px solid white;padding-bottom: 5px;">Vulnerabilities</a>
+            <a href="#" class="sign-in-link" style="color: #ffff; text-decoration: none;">Scan</a>
+            <a href="/testip" class="sign-in-link" style="color: #ffff; text-decoration: none;">Test IP</a>
+            <a href="/story" class="sign-in-link" style="color: rgb(255, 255, 255); text-decoration: none;background-color: red; border-radius: 10px;width: 100px;height: 30px;text-align: center;padding-top: 2px;">История</a>
+            <a href="#" class="sign-in-link" style="color: black; text-decoration: none;"><img src="{{ url_for('static', filename='icons/image2.png') }}" alt=""></a>
+            <a href="#" class="sign-in-link" style="color: black; text-decoration: none;"><img src="{{ url_for('static', filename='icons/image3.png') }}" alt=""></a>
+            <a href="#" class="sign-in-link" style="color: black; text-decoration: none;"><img src="{{ url_for('static', filename='icons/image.png') }}" alt=""></a>
+            <a href="#" class="sign-in-link" style="color: black;"><img src="{{ url_for('static', filename='image/image4.png') }}" alt=""></a>
+            
+            
+            
+        </div>
+    </header>
+
+    <div class="vulnerability-card">
+        <div class="vulnerability-info">
+            <p class="title">1. Название уязвимости</p>
+            <p class="description">Описание</p>
+            <p class="source-link">Ссылка на источник</p>
+            <p class="exploit">Эксплойт и PoC</p>
+        </div>
+        <div class="publish-date">
+            <p>Дата публикации</p>
+        </div>
+    </div>
+    
+
+    
+    <div class="vulnerability-card">
+        <div class="vulnerability-info">
+            <p class="title">2. Название уязвимости</p>
+            <p class="description">Описание</p>
+            <p class="source-link">Ссылка на источник</p>
+            <p class="exploit">Эксплойт и PoC</p>
+        </div>
+        <div class="publish-date">
+            <p>Дата публикации</p>
+        </div>
+    </div>
+    
+
+    
+    <div class="vulnerability-card">
+        <div class="vulnerability-info">
+            <p class="title">3. Название уязвимости</p>
+            <p class="description">Описание</p>
+            <p class="source-link">Ссылка на источник</p>
+            <p class="exploit">Эксплойт и PoC</p>
+        </div>
+        <div class="publish-date">
+            <p>Дата публикации</p>
+        </div>
+    </div>
+    
+        
+    
+
+    <main class="main-content">
+        <div class="sidebar left">
+            <p style="margin-left: -108rem;margin-top: -55rem;">C</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -108rem;">Y</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -108rem;">B</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -108rem;">E</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -108rem;">R</p>
+        </div>
+
+        
+    
+        
+    <script>
+   document.getElementById('directory-input').addEventListener('change', function(event) {
+    const files = event.target.files;
+    if (files.length > 0) {
+        // Получаем путь директории из первого файла
+        const path = files[0].webkitRelativePath.split('/')[0];
+        document.getElementById('selected-path').textContent = `Выбрана директория: ${path}`;
+    } else {
+        document.getElementById('selected-path').textContent = 'Директория не выбрана.';
+    }
+});
+
+    </script>
+</body>
+</html>

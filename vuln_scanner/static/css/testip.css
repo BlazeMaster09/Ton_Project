@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Iceland';
+    src: url('../font/Iceland-Regular.ttf') format('truetype');
+    
+}
+
+body {
+    font-family: 'Iceland', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   
+   
+
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    border-bottom: 2px solid #ffffff;
+    
+    top: 0;
+}
+
+.logo {
+    font-size: 40px;
+    margin-left: 50px;
+    font-weight: bold;
+    
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    
+    font-size: 20px;
+}
+
+.user-icon {
+    width: 89px;
+    height: 89px;
+    border-radius: 50%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    text-align: center;
+}
+
+.sidebar p {
+    font-size: 96px;
+    margin: 2px 0;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+    
+}
+
+.sidebar p:nth-child(1) { animation-delay: 0.2s; }
+.sidebar p:nth-child(2) { animation-delay: 0.4s; }
+.sidebar p:nth-child(3) { animation-delay: 0.6s; }
+.sidebar p:nth-child(4) { animation-delay: 0.8s; }
+.sidebar p:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Security-text{
+    position: relative;
+    text-align: start;
+    margin-left: -50rem;
+    margin-top: 5rem;
+}
+
+.security-check-container {
+    display: flex;
+    margin-top: -5rem;
+    margin-left: -22rem;
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.recent-scans h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.recent-scans ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-scans li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 24px;
+}

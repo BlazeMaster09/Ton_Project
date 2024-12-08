@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Iceland';
+    src: url('../font/Iceland-Regular.ttf') format('truetype');
+    
+}
+
+body {
+    font-family: 'Iceland', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../image/Group\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    border-bottom: 2px solid #ffffff;
+    
+    top: 0;
+}
+
+.logo {
+    font-size: 40px;
+    margin-left: 50px;
+    font-weight: bold;
+    
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    
+    font-size: 20px;
+}
+
+.user-icon {
+    width: 89px;
+    height: 89px;
+    border-radius: 50%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    text-align: center;
+}
+
+.sidebar p {
+    font-size: 96px;
+    margin: 2px 0;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+    
+}
+
+.sidebar p:nth-child(1) { animation-delay: 0.2s; }
+.sidebar p:nth-child(2) { animation-delay: 0.4s; }
+.sidebar p:nth-child(3) { animation-delay: 0.6s; }
+.sidebar p:nth-child(4) { animation-delay: 0.8s; }
+.sidebar p:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.vulnerabilities {
+    margin-top: 170px;
+    text-align: left;
+    width: 100%;
+    
+}
+
+.vulnerabilities h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    
+    padding-bottom: 10px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 20px;
+    margin-bottom: 20px;
+    
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #1e1e1e;
+}
+
+.icon img {
+    width: 130px;
+    height: 130px;
+}
+
+.details {
+    flex: 1;
+    margin-left: 20px;
+margin-top: -5rem;
+}
+
+
+.details h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.details .severity {
+    font-size: 14px;
+    color: #f00;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: -40rem;
+    padding-left: 40rem;
+}
+
+.count .arrow {
+    width: 27px;
+    height: 15px;
+    
+}
+
+
+/* Общий контейнер */
+.directory-picker {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-family: 'Iceland', sans-serif; /* Используем шрифт, как в твоём проекте */
+}
+
+/* Метка для ввода */
+.directory-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Стили для ввода */
+.directory-input {
+    background-color: #1e1e1e;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    width: 300px;
+    transition: 0.3s;
+}
+
+/* Наведение */
+.directory-input:hover {
+    background-color: #333;
+    border-color: #00ff00;
+}
+
+/* Выбранный путь */
+.selected-path {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: monospace;
+    color: #cccccc;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.vulnerability-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #000000;
+}
+
+.vulnerability-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.vulnerability-info .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.vulnerability-info .description,
+.vulnerability-info .source-link,
+.vulnerability-info .exploit {
+    margin-bottom: 5px;
+}
+
+.publish-date {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 14px;
+    color: #000000;
+}

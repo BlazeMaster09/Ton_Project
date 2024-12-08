@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGrand Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sign-up.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">CyberGrand</div>
+        <div class="header-links">
+            <a href="/" class="login-link" style="color: #ffff; text-decoration: none;">Login</a>
+            <div class="user-icon"><img src="{{ url_for('static', filename='/image/image4.png') }}" alt=""></div>
+            <a href="/" class="sign-in-link" style="color: #ffff; text-decoration: none;">Sign in</a>
+            
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="sidebar left">
+            <p style="margin-left: -75rem;margin-top: -8.5rem;">C</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -75rem;">Y</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -75rem;">B</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -75rem;">E</p>
+            <br/>
+            <br/>
+            <p style="margin-left: -75rem;">R</p>
+        </div>
+
+        <section class="login-form-section">
+            <h1 class="form-title" style="text-align: center; font-size: 48px;margin-top: -10rem">Sign up</h1><br/>
+            <form class="login-form">
+                <label for="login">Login</label>
+                <input type="text" id="login" name="login" placeholder="Login">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+
+                <label for="password">Repeat Password</label>
+                <input type="password" id="password" name="password" placeholder="Repeat Password">
+
+                <div class="form-buttons">
+                    <button type="submit" class="login-button"><a href="/index" style="color: #ffff; text-decoration: none;" > Login</a></button>
+                    <button type="button" class="register-button">Registration</button>
+                </div>
+            </form>
+        </section>
+
+        <div class="sidebar right">
+            <p style="margin-right: -75rem;margin-top: -8.5rem;">G</p>
+            <br/>
+            <br/>
+            <p style="margin-right: -75rem">R</p>
+            <br/>
+            <br/>
+            <p style="margin-right: -75rem">A</p>
+            <br/>
+            <br/>
+            <p style="margin-right: -75rem">N</p>
+            <br/>
+            <br/>
+            <p style="margin-right: -75rem">D</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer-text">WELCOME</h2>
+    </footer>
+</body>
+</html>
